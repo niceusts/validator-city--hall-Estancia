@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#ValidationBackgraund{
+    height: 100vh;
+}
+
+#sisvalSide{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sisvalSide h2{
+    width: 200px;
+    text-align: center;
+    color: gray;
+    
+}
+
+#sisvalSide h2 b{
+    font-size: 2.5rem;
+}
+
+#sisvalService{
+    color: white;
+    height: 100vh;
+    display: flex;
+    background-image: url(../img/validacao-doc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right .5s ease-in; /* ANIMAÇÃO */
+    position: fixed; /* POSITION ALTERADO */
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.inputService input{
+    max-width: 500px;
+    min-width: 400px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.inputService label{
+    margin-top: 1rem;
+}
+#sisvalService .inputService .sisvalButton{
+   display: flex;
+   justify-content: center;
+}
+#sisvalService h3{
+    color: white;
+    width: 300px;
+    text-align: center;
+}
+
+.sisvalButton{
+    margin-top: 2rem;
+}
+
+.sai{
+    right: -55vw !important;
+ }
+ .newConsultAba{
+    right: 0vw !important;
+ }
+
+ .sisvalConsult{
+    padding: 1rem 14rem 1rem 1rem;
+    width: 50vw;
+    border: 1px solid gray;
+    background-color: #f7f7f7;
+    display: flex !important;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: right .5s ease-in;
+    position: fixed;
+    top: 0;
+    right: 0;
+ }
+
+ .resultConsult{
+    transition: 0.5s ease-in;
+    /* position: relative; */
+    top: 50%;
+    z-index: 999;
+    right: 90%;
+    height: 2rem;
+ }
+
+ .resultConsult button{
+    border: transparent;
+    background-color: rgb(33 187 80);
+    border-radius: 0.5rem;
+    padding: 5px;
+
+ }
+@media all and (min-width: 320px) and (max-width: 780px) {
+
+    #sisvalService {
+        background-image: url(../img/validacao-doc-mobile.png);
+        width: 100%;
+    }
+    .sai{
+        right: -100vw !important;
+     }
+     .sisvalConsult{
+         width: 100vw;
+         padding: 1rem;
+     }
+
+     .inputService input {
+        min-width: 300px;
+     }
+     #imgPME1 {
+        display: none;
+    }
+  
+     #imgPME2 {
+       position: absolute;
+    top: 0;
+    z-index: 999;
+    margin-top: 10px;
+    }
+    #imgPME3 {
+        display: none;
+    }
+}
+
+@media all and (min-width: 781px) and (max-width: 991px)  {
+    .sisvalConsult{
+        padding: 1rem 3rem 1rem 1rem;
+    }
+
+     .sai{
+        right: -95vw !important;
+     } 
+     #imgPME1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .sai{
+        right: -62vw !important;
+     } 
+     #imgPME1 {
+        display: none;
+    }
+    #imgPME3 {
+        display: none;
+    }
+    .sisvalConsult{
+        padding: 1rem 6rem 1rem 1rem;
+    }
+
+}
